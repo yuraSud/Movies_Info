@@ -82,7 +82,7 @@ class DetailViewModel {
         
     }
     
-    private func fetchRecommendationMovies() {
+    func fetchRecommendationMovies() {
         networkManager.fetchMovies(urlString: URLBuilder.getRecommendationMovies(id: model.idMovie ?? 0), type: MainResultsMovies.self)
             .sink { сompletion in
                 switch сompletion {

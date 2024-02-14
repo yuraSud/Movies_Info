@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "1A38104B-00D0-45F9-B320-2085ADF09858",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Movies.xcodeproj",
+        "identifier" : "201555782B46D296007A7423",
+        "name" : "MoviesUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Movies.xcodeproj",
+        "identifier" : "200A4A942B79284C00E60079",
+        "name" : "MoviesUNITTests"
+      }
+    }
+  ],
+  "version" : 1
+}
