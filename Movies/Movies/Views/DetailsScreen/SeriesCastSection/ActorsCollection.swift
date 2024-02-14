@@ -46,7 +46,11 @@ extension ActorsCollection: ASCollectionDelegate, ASCollectionDataSource {
     
     func collectionNode(_ collectionNode: ASCollectionNode, nodeBlockForItemAt indexPath: IndexPath) -> ASCellNodeBlock {
         let actor = actors[indexPath.item]
-        return { ActorCell(actorModel: actor) }
+        return {
+            let cell = ActorCell(actorModel: actor)
+            cell.accessibilityIdentifier = "cellActor_\(indexPath.item)"
+            return cell
+        }
     }
     
     func collectionNode(_ collectionNode: ASCollectionNode, constrainedSizeForItemAt indexPath: IndexPath) -> ASSizeRange {

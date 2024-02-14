@@ -73,7 +73,10 @@ extension SearchTable: ASTableDelegate, ASTableDataSource {
     
     func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
         let search = sourceDataForTable[indexPath.section][indexPath.row]
-        return { SearchCell(search: search, type: self.typeCell) }
+        return { let cell = SearchCell(search: search, type: self.typeCell)
+            cell.accessibilityIdentifier = "SearchCell_\(indexPath.row)"
+            return cell
+        }
     }
     
     func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
