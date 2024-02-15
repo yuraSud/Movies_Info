@@ -1,6 +1,6 @@
-# Interesting numbers
-A program designed to display interesting facts about numbers. The user has the opportunity to select any number or let the application choose a random number. It is also possible to select a range of numbers and even a date. 
-Also, as an addition, a firebase has been introduced with the ability to initialize the user and save the number of requests in the user profile.
+# Movies Info
+A program designed to display movies and facts about the film and the actors who starred in the film. There are also recommendations and films in which this or that actor starred. 
+Also, as an addition, a firebase has been introduced with the ability to initialize the user.
 
 ## Content
 - [Technologies](#technologies)
@@ -14,6 +14,7 @@ Also, as an addition, a firebase has been introduced with the ability to initial
 - Code-only layout
 - Auto Layout
 - MVVM
+- Coordinator
 - Texture (AsyncDisplayKit)
 - Without storyboard
 - JSON 
@@ -27,7 +28,7 @@ Also, as an addition, a firebase has been introduced with the ability to initial
 
 
 ## Additionally
-Added the ability to log in anonymously, or using Google or Apple authentication. It is also possible to delete the user and all data associated with him, such as the number of requests, mail, login.
+Added the option to send an error to the Firebase cloud. Login to the application using face ID or fingerprint has also been introduced, and user data such as the password is stored in the Keychain. It is also possible to delete the user and all data associated with him.
 
 <img src="./screenShots/1.png" alt="drawing" width="200"/> <img src="./screenShots/2.png" alt="drawing" width="200"/><img src="./screenShots/4.png" alt="drawing" width="200"/><img src="./screenShots/10.png" alt="drawing" width="200"/>
 
